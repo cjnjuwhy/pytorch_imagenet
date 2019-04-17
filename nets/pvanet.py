@@ -2,7 +2,7 @@ import torch
 import torchvision
 import torch.nn as nn
 import torch.nn.functional as F
-from utils import *
+from torch.utils import *
 
 
 # XXX: Not tested
@@ -232,7 +232,7 @@ class Inception(nn.Module):
             x = self.act(x)
 
         if (x_sc.get_device() != x.get_device()):
-            print "Something's wrong"
+            print("Something's wrong")
 
         # Projection
         if self.proj:

@@ -2,6 +2,7 @@
 
 - PyTorch models for imagenet classification.
 - These models can be utilized as pre-training models for other computer vision tasks.
+- Training with the nets provided by models/net_factory.py(self-define & in torch models)
 
 
 ## Training results
